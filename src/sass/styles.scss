@@ -3,6 +3,7 @@
 @import "./menu.scss";
 @import "./why.scss";
 @import "./latestarticle.scss";
+@import "./footer.scss";
 
 :root {
    --darkBlue: hsl(233, 26%, 24%);
@@ -71,10 +72,41 @@ body {
 }
 
 .button {
-   border: 2px solid linear-gradient(to right, var(--limeGreen) 0%, var(--rightCyan) 100%);
+   // border: 2px solid linear-gradient(to right, var(--limeGreen) 0%, var(--rightCyan) 100%);
+   border: none;
    padding: .9em 2.2em;
    font-size: 1em;
    border-radius: 1.5em;
    color: var(--white);
    background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--rightCyan) 100%);
+}
+
+@mixin icon {
+   width: 25px;
+   height: 25px;
+   display: inline-flex;
+   background-repeat: no-repeat;
+}
+
+.icon {
+   &__facebook {
+      @include icon;
+      background-image: url('../images/icon-facebook.svg');
+   }
+   &__youtube {
+      @include icon;
+      background-image: url('../images/icon-youtube.svg');
+   }
+   &__twitter {
+      @include icon;
+      background-image: url('../images/icon-twitter.svg');
+   }
+   &__pinterest {
+      @include icon;
+      background-image: url('../images/icon-pinterest.svg');
+   }
+   &__instagram {
+      @include icon;
+      background-image: url('../images/icon-instagram.svg');
+   }
 }

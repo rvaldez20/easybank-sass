@@ -22,7 +22,8 @@
 .why {
   text-align: center;
   background: var(--gray);
-  padding-top: 5em; }
+  padding-top: 5em;
+  padding-bottom: 5em; }
   .why .copy {
     margin-bottom: 4em;
     font-size: 1em; }
@@ -54,6 +55,30 @@
     .latestArticles__item img {
       width: 100%;
       object-fit: cover; }
+
+.footer {
+  background: var(--darkBlue);
+  color: var(--white);
+  padding: 2em;
+  text-align: center; }
+  .footer img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2em; }
+  .footer__link {
+    display: block;
+    text-decoration: none;
+    color: var(--gray);
+    margin-bottom: 2em; }
+  .footer__social {
+    display: grid;
+    grid-template-columns: repeat(5, 25px);
+    column-gap: 1em;
+    justify-content: center;
+    margin-bottom: 2.5em; }
+  .footer__copyright {
+    color: var(--grayBlue);
+    margin-top: 2.5em; }
 
 :root {
   --darkBlue: hsl(233, 26%, 24%);
@@ -106,11 +131,42 @@ body {
   font-size: 1em; }
 
 .button {
-  border: 2px solid linear-gradient(to right, var(--limeGreen) 0%, var(--rightCyan) 100%);
+  border: none;
   padding: .9em 2.2em;
   font-size: 1em;
   border-radius: 1.5em;
   color: var(--white);
   background-image: linear-gradient(to right, var(--limeGreen) 0%, var(--rightCyan) 100%); }
+
+.icon__facebook {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-facebook.svg"); }
+.icon__youtube {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-youtube.svg"); }
+.icon__twitter {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-twitter.svg"); }
+.icon__pinterest {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-pinterest.svg"); }
+.icon__instagram {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-instagram.svg"); }
 
 /*# sourceMappingURL=styles.css.map */
