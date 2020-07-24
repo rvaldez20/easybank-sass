@@ -126,6 +126,19 @@
     .latestArticles__item img {
       width: 100%;
       object-fit: cover; }
+  @media screen and (min-width: 768px) {
+    .latestArticles .title__h1 {
+      text-align: left;
+      padding-bottom: 1em; }
+    .latestArticles__item-container {
+      padding: 1em; }
+    .latestArticles__grid {
+      display: grid;
+      grid-column-gap: 1.875em;
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (min-width: 1024px) {
+    .latestArticles__grid {
+      grid-template-columns: repeat(4, 1fr); } }
 
 .footer {
   background: var(--darkBlue);
@@ -178,8 +191,7 @@ body {
   padding: 0 var(--wrapperSpace);
   max-width: 1115px;
   margin: auto;
-  width: 100%;
-  box-sizing: border-box; }
+  width: 100%; }
 
 .title__h1 {
   font-size: 2.5em;
