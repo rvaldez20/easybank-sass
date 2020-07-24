@@ -18,5 +18,22 @@
       }      
    }
 
+   @media screen and (min-width: 768px){
+      text-align: left;
+      &__grid {
+         display:grid;
+         grid-column-gap: 1em;
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+
+   @media screen and (min-width: 1024px){
+      &__grid {
+         grid-template-columns: repeat(4, 1fr);
+      }
+      .copy {
+         font-size: .9em;
+      }
+   }
    
 }
